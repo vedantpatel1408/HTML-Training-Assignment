@@ -1,0 +1,124 @@
+.custom-file-input {
+    color: rgb(252, 252, 252);
+    background: url(./cloud-upload-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 14px;
+    background-position-y: 7px;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+   
+    content: 'Upload';
+    color: #C8242F;
+    display: inline-block;
+  
+    border: 1px solid #C8242F;
+    border-radius: 23px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 124px;
+    height: 36px;
+    text-align: center ;
+   
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active {
+    outline: 0;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+  }
+  
+
+  .custom-button{
+    color: #C8242F;
+    border-color: #C8242F;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 23px;
+    text-align: center ;
+    width: 124px;
+    height: 36px;
+  }
+
+  .custom-button:hover{
+    background-color: #C8242F;
+    color: #FFFFFF;
+  }
+
+input[type="checkbox"]{
+    accent-color: #C8242F;
+}
+
+input[type="radio"]#red{
+    accent-color: #C8242F;
+}
+
+.navbar-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 0;
+  display: flex;
+}
+
+.navbar-container ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-container ul li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navbar-container ul li a {
+  color: #ADADAD;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+  height: 3px;
+  background-color: #000000;
+  width: 0%;
+  transition: width 0.2s, background-color 0.5s;
+  margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+}
+
+.navbar-container ul li:hover .underline {
+  background-color: rgb(255, 0, 0);
+  width: 100%;
+}
+
+.navbar-container ul li:hover a {}
+
+.navbar-container ul li:active a {
+  transition: none;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.navbar-container ul li:active .underline {
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.76);
+}

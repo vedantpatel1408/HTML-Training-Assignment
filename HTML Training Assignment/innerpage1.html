@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="container-fluid" style="background-color: #FFFFFF;">
+    <nav class="navbar navbar-expand-lg " style="background-color: white;">
+        <div class="container-fluid">
+
+            <a class="toggalbtn" href="#"><img src="./images/menu-bar.svg" class="me-2"></a>
+
+
+            <img src="./images/header-logo.svg">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <form class="d-flex ms-3" role="search">
+                        <i class="bi bi-search my-auto"></i>
+                        <input class="form-control me-2 ms-3 border-0 " style="width: 60vw; background-color: white;"
+                            type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+                </ul>
+                <div class="d-flex">
+                    <i class="bi bi-bell my-auto"></i>
+                    <img src="./images/profile.png" class="ms-3">
+
+
+                    <div class="dropdown-center my-auto">
+                        <a class="nav-link dropdown-toggle  ms-3 me-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            John Doe
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="#">Action 1</a></li>
+                            <li><a class="dropdown-item" href="#">Something </a></li>
+                            <li><a class="dropdown-item" href="#">Other </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block ">
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-2 mt-4">
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                            <img src="images/dashboard-active.svg" style="width: 2vw;">
+                            <span class="ms-2">Dashboard</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/graph-default.svg" style="width: 2vw;">
+                            <span class="ms-2">Analysis</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/inbox-default.svg" style="width: 2vw;"><span class="ms-2">Inbox</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/clock-default.svg" style="width: 2vw;">
+                            <span class="ms-2">History</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/user-default.svg" style="width: 2vw;">
+                            <span class="ms-2">Users</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/maintenance-default.svg" style="width: 2vw;">
+                            <span class="ms-2">Maintenance</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <img src="images/setting-default.svg" style="width: 2vw;">
+                            <span class="ms-2 mt-3">Setting</span></a>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- Sidebar -->
+        </div>
+        <div class="col-lg-10 " style="background-color: #FAFAFA;">
+            <h3 class="mb-3 ms-2">Analysis</h3>
+            <form class="row g-3 mx-3 my-4" name="frm" style="background-color: #FFFFFF;">
+                <label for="inputEmail4" class="form-label fst-bold mt-4"><strong>One Column</strong></label>
+                <div class="col-md-12 mt-2">
+                    <input type="text" placeholder="Name" class="form-control " id="name">
+                    <select id="inputState" class="form-select mt-3">
+                        <option selected>Dropdown</option>
+                        <option>...</option>
+                    </select>
+                    <textarea class="form-control mt-3" id="multipleline" placeholder="Multiple line"
+                        rows="3"></textarea>
+                </div>
+
+
+
+                <label for="inputPassword4" class="form-label mt-4"><strong>Two Column</strong></label>
+                <div class="col-md-6 mt-3">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                <div class="col-md-6">
+                    <select id="inputState" class="form-select">
+                        <option selected>Dropdown</option>
+                        <option>...</option>
+                    </select>
+                </div>
+
+                <label for="inputPassword4" class="form-label mt-4"><strong>Three Column</strong></label>
+                <div class="col-md-4 mt-3">
+                    <label>focus</label>
+                    <input type="text" class="form-control input-lg" id="name" placeholder="Focus">
+                </div>
+                <div class="col-md-4">
+                    <label>password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                <div class="col-md-4">
+                    <label>disabled</label>
+                    <input type="text" class="form-control" id="inputPassword4" value="Johndoe" disabled>
+                </div>
+
+                <!--Forth column-->
+                <label for="inputPassword4" class="form-label mt-4"><strong>Four Column</strong></label>
+                <div class="col-md-3 form-group mt-3">
+                    <label style="transform:translate(10px,10px);">designation</label>
+                    <input type="text" class="form-control input-lg" id="name" value="UI designer">
+                </div>
+                <div class="col-md-3">
+                    <label><input type="hidden"></label>
+                    <input type="" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="col-md-3">
+                    <label style="transform:translate(10px,10px);">username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="col-md-3">
+                    <label><input type="hidden"></label>
+                    <select id="inputState" class="form-select ">
+                        <option selected>Select</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <!--/Forth column-->
+
+                <!--Other elements-->
+                <label for="inputPassword4" class="form-label mt-4"><strong>Other Design Element</strong></label>
+                <div class="col-md-4 mt-2 ">
+
+                    <label>File upload</label>
+                    <input type="file" class="  custom-file-input">
+                </div>
+                <!--/Other elements-->
+
+
+                <!--Radio button-->
+
+
+                <label><strong>Radio Button</strong></label>
+                <div class="row">
+                    <label class="radio-inline col-md-2 mt-2">
+                        <input type="radio" value="">&MediumSpace; Option 1
+                    </label>
+                    <label class="radio-inline col-md-2 mt-2">
+                        <input type="radio" value="">&MediumSpace; Option 2
+                    </label>
+                </div>
+
+
+                <!--/Radio button-->
+
+
+                <!--Check box-->
+
+
+                <label><strong>Check box</strong></label>
+                <div class="row">
+                    <label class="checkbox-inline col-md-2 mt-2">
+                        <input type="checkbox" value="">&MediumSpace; Option 1
+                    </label>
+                    <label class="checkbox-inline col-md-2 mt-2">
+                        <input type="checkbox" value="">&MediumSpace; Option 2
+                    </label>
+                </div>
+                <!--/Check box-->
+
+                <!--Snackbar-->
+
+
+                <label for="inputPassword4" class="form-label"><strong>Snackbar</strong></label>
+                <div class="col-md-6 ">
+                    <input type="text" class="form-control " id="name" value="      This is an error message"
+                        style="background-image: url(./images/error-icon.svg); background-repeat: no-repeat;border-color: #FF3535; color: #FF3535;">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="username" value="      This is an information message"
+                        style="background-image: url(./images/info-icon.svg); background-repeat: no-repeat;border-color: #00B9E1; color: #00B9E1;">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputPassword4" value="      This is a Warning message"
+                        style="background-image: url(./images/warning-icon.svg); background-repeat: no-repeat;border-color: #FFA800; color: #FFA800;">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputPassword4" value="      This is a Success message"
+                        style="background-image: url(./images/success-icon.svg); background-repeat: no-repeat;border-color: #00AF27; color: #00AF27;">
+                </div>
+
+                <!--/Snackbar-->
+
+
+                <!--Call to action-->
+
+
+                <label class="form-label"><strong>Call to action</strong></label>
+                <div class="col-md-2">
+                    <button type="button" class="custom-button">Primary</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="custom-button">Secondary</button>
+                </div>
+
+                <!--/Call to action-->
+
+                <!--Tabs-->
+
+                <label class="form-label"><strong>Tabs</strong></label>
+                <div class="nav ">
+                    <div class="nav-item">
+                        <a href="#" class="ms-3" style="color: #ADADAD; text-decoration: none;">Tab1</a>
+                        <a href="#" class="ms-3" style="color: #ADADAD; text-decoration: none;">Tab2</a>
+                        <a href="#" class="ms-3" style="color: #ADADAD; text-decoration: none;">Tab3</a>
+                    </div>
+                    <div class="row mt-1 ms-2" style="height: 3px; width: 75vw; background-color: #ADADAD; "></div>
+                    <div class="row mt-1 ms-2" style="color:#3E3E3E">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Reprehenderit exercitationem explicabo itaque, animi facere dolorum? Possimus voluptates
+                        qui iusto culpa minima nulla suscipit ratione excepturi aliquid, sit eligendi maxime nobis.
+                    </div>
+                </div>
+                <!--/Tabs-->
+
+
+
+
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
