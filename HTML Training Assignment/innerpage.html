@@ -69,16 +69,17 @@
                         <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple border-0"
                             aria-current="true">
                             <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple border-0"
-                                style="background: #FFF3F4 0% 0% no-repeat padding-box;">
-                                <img src="images/dashboard-active.svg " class="my-auto" style="width: 15px;
+                                >
+                                <img src="images/dashboard-default.svg " class="my-auto" style="width: 15px;
                             height: 15px;" alt="">
                                 <span
-                                    style="font: normal normal normal 16px/21px Roboto;color: #C8242F;">Dashboard</span>
+                                    style="font: normal normal normal 16px/21px Roboto;">Dashboard</span>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple  border-0">
-                                <img src="images/graph-default.svg " class="my-auto" style="width: 15px;
+                            <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple  border-0"
+                            style="background: #FFF3F4 0% 0% no-repeat padding-box;">
+                                <img src="images/graph-active.svg " class="my-auto" style="width: 15px;
                           height: 15px;" alt="">
-                                <span style="font: normal normal normal 16px/21px Roboto;">Analysis</span></a>
+                                <span style="font: normal normal normal 16px/21px Roboto;color: #C8242F;">Analysis</span></a>
 
                             <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple  border-0">
                                 <img src="images/inbox-default.svg " class="my-auto" style="width: 15px;
@@ -109,30 +110,29 @@
 
         <div class="col-lg-10 " id="mainContent" style="background-color: #FAFAFA;">
             <h3 class="mb-3 ms-2">Analysis</h3>
-            <form class="row g-3 mx-3 my-4  was-validated" name="frm" style="background-color: #FFFFFF;">
+            <form class="row g-3 mx-3 my-4 " name="frm" style="background-color: #FFFFFF;" >
                 <label for="inputEmail4" class="form-label fst-bold mt-4"><strong>One Column</strong></label>
                 <div class="col-md-12 mt-2">
-                    <input type="text" placeholder="Name" class="form-control" id="name" required>
-                    <div class="invalid-feedback">Please fill out this field.</div>
-                    <select id="inputState" class="form-select mt-3">
+                    <input type="text" placeholder="Name" class="form-control" id="name" >
+                    <select id="inputState" class="form-select mt-3" >
                         <option selected>Dropdown</option>
                         <option>...</option>
                     </select>
-                    <textarea class="form-control mt-3" id="multipleline" placeholder="Multiple line" rows="3"
-                        required></textarea>
+                    <textarea class="form-control mt-3" id="multipleline" placeholder="Multiple line"
+                        rows="3" required></textarea>
                 </div>
 
 
 
                 <label for="inputPassword4" class="form-label mt-4"><strong>Two Column</strong></label>
                 <div class="col-md-6 mt-3">
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    <input type="text" class="form-control" id="name" placeholder="Name" >
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <input type="text" class="form-control" id="username" placeholder="Username" >
                 </div>
                 <div class="col-md-6">
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" >
                 </div>
                 <div class="col-md-6">
                     <select id="inputState" class="form-select">
@@ -142,32 +142,33 @@
                 </div>
 
                 <label for="inputPassword4" class="form-label mt-4"><strong>Three Column</strong></label>
-                <div class="col-md-4 mt-3">
-                    <label>focus</label>
-                    <input type="text" class="form-control input-lg" id="name" placeholder="Focus" required>
+                <div class="col-md-4 mt-3 ">
+                    <label>Focus</label>
+                    <input type="text" class="form-control input-lg" id="name" placeholder="Focus">
                 </div>
                 <div class="col-md-4">
-                    <label>password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" >
                 </div>
                 <div class="col-md-4">
-                    <label>disabled</label>
-                    <input type="text" disabled class="form-control" id="inputPassword4" value="Johndoe">
+                    <label>Disabled</label>
+                    <input type="text"disabled class="form-control" id="inputPassword4" value="Johndoe">
                 </div>
 
                 <!--Forth column-->
                 <label for="inputPassword4" class="form-label mt-4"><strong>Four Column</strong></label>
-                <div class="col-md-3 form-group mt-3">
+                <div class="col-md-3 form-group mt-3 was-validated">
                     <label style="transform:translate(10px,10px);">designation</label>
-                    <input type="text" class="form-control input-lg" id="name" value="UI designer" required>
+                    <input type="text" class="form-control input-lg" id="name" placeholder="UI designer"required>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
                 <div class="col-md-3">
                     <label><input type="hidden"></label>
-                    <input type="" class="form-control" id="name" placeholder="Name" required>
+                    <input type="" class="form-control" id="name" placeholder="Name" >
                 </div>
                 <div class="col-md-3">
                     <label style="transform:translate(10px,10px);">username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <input type="text" class="form-control" id="username" placeholder="Username" s>
                 </div>
                 <div class="col-md-3">
                     <label><input type="hidden"></label>
@@ -193,7 +194,8 @@
                 <label><strong>Radio Button</strong></label>
                 <div class="d-flex flex-wrap ms-1">
                     <div class=" form-check-inline">
-                        <input class="" type="radio" id="red" name="radioFilter" id="filter-none">
+                        <input class="" type="radio" id="red" name="radioFilter" id="filter-none"
+                            >
                         <label class="form-check-label" for="inlineRadio1">Option 1</label>
                     </div>
                     <div class="form-check form-check-inline">
@@ -216,8 +218,8 @@
                     <label class="checkbox-inline col-md-2 mt-2">
                         <input type="checkbox" value="">&MediumSpace; Option 1
                     </label>
-                    <label class="checkbox-inline col-md-2 mt-2">
-                        <input type="checkbox" value="">&MediumSpace; Option 2
+                    <label class="checkbox-inline col-md-2 mt-2 ms-0" style="transform: translateX(-70px);">
+                        <input type="checkbox"  value="">&MediumSpace; Option 2
                     </label>
                 </div>
                 <!--/Check box-->
